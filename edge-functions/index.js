@@ -7,9 +7,9 @@ export default function onRequest(context) {
 
   const target = new URL(TARGET_URL);
   // 保留原请求 query 参数（如果有），便于追踪/统计
-  for (const [k, v] of url.searchParams) {
-    target.searchParams.append(k, v);
-  }
+//   for (const [k, v] of url.searchParams) {
+//     target.searchParams.append(k, v);
+//   }
 
   return new Response(null, {
     status: REDIRECT_STATUS,
